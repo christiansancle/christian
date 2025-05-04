@@ -1,21 +1,100 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
     color: #333;
-    margin: 20px;
+}
+
+header {
+    background: #0078D7;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0078D7;
 }
 
 img {
-    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+a {
+    color: #0078D7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
 }
 
 table {
-    width: 50%;
-    margin-top: 10px;
+    width: 100%;
     border-collapse: collapse;
+    margin: 1rem 0;
 }
 
-th, td {
+table th, table td {
+    border: 1px solid #ddd;
     padding: 8px;
-    text-align: center;
+    text-align: left;
+}
+
+table th {
+    background: #0078D7;
+    color: #fff;
+}
+
+form {
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background: #0078D7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #005bb5;
 }
